@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Help with importing, playing and organising Commodore 64 tunes in SID Player.">
+<title>SID Player Support</title>
+<style>
+  :root { color-scheme: light dark; --ink: #1c1b24; --soft: #5b5868; --bg: #faf9fd; --accent: #5546d0; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #ebe9f4; --soft: #aca8bc; --bg: #15141c; --accent: #a397ff; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 6px; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  .intro { color: var(--soft); }
+  .contact { border-left: 4px solid var(--accent); padding: 4px 0 4px 16px; }
+  footer { border-top: 1px solid var(--soft); margin-top: 32px; padding-top: 16px; color: var(--soft); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>SID Player Support</h1>
+  <p class="intro">Help with playing and organising your Commodore 64 music.</p>
+  <p class="contact">Email Stuart Clark at <a href="mailto:trautskralc@gmail.com?subject=SID%20Player%20support">trautskralc@gmail.com</a>.</p>
+
+  <h2>When asking for help</h2>
+  <p>Include your device model, operating system version, SID Player version and the steps that led to the problem. If a particular tune misbehaves, tell us its title, composer and, for tunes from the High Voltage SID Collection, its path in the collection. Please don't send passwords or other personal information.</p>
+
+  <h2>Getting tunes</h2>
+  <p>SID Player doesn't include or download any music. A large, free archive of C64 music is available from the <a href="https://www.hvsc.c64.org">High Voltage SID Collection</a> (HVSC). Download and unzip it, then import the files or folders you want.</p>
+
+  <h2>Importing tunes</h2>
+  <p>On a Mac, choose Import and select <code>.sid</code> files or whole folders. On iPhone and iPad, choose Import, or copy tunes into the SID Player folder in the Files app; the library updates when you return to the app. Imported tunes are copied into SID Player, so you can delete or move the originals afterwards.</p>
+
+  <h2>Tune lengths and subtune names</h2>
+  <p>Import HVSC's <code>DOCUMENTS/Songlengths.md5</code> and <code>DOCUMENTS/STIL.txt</code> in Settings, or import an HVSC folder that contains its <code>DOCUMENTS</code> folder. Without a song-length database, tunes play for the default length chosen in Settings.</p>
+
+  <h2>A tune won't import or sounds wrong</h2>
+  <p>SID Player plays PSID and RSID tunes. Damaged files, and tunes that need a MUS player or Commodore BASIC, are skipped. Some tunes were written for a particular SID chip: try changing the SID chip setting in Settings to MOS 6581 or MOS 8580, or back to Automatic.</p>
+
+  <h2>No sound</h2>
+  <p>Check the volume and the selected output device. If playback stops after a call or when headphones are disconnected, press Play to resume.</p>
+
+  <h2>Privacy</h2>
+  <p>Read the <a href="privacy-policy.html">SID Player Privacy Policy</a>. In short: SID Player keeps everything on your device and collects nothing.</p>
+  <footer>&copy; 2026 Stuart Clark</footer>
+</main>
+</body>
+</html>
